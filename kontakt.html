@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kontakt – Få kostnadsfri offert | Sydvolt</title>
+  <meta name="description" content="Kontakta Sydvolt för offert på solceller och solcellsbatterier. Fyll i formuläret eller ring oss – vi återkommer snabbt med rådgivning och prisförslag." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root { --sv-blue:#0A4D8C; --sv-green:#1DB954; --sv-light:#F8FBFF; --sv-dark:#0B1420; }
+    body { font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,sans-serif; color:#0b1a2b; }
+    .container{max-width:1200px}
+    .btn-primary{background:var(--sv-blue);color:white}
+    .btn-primary:hover{background:#083e72}
+    .shadow-soft{box-shadow:0 10px 30px rgba(10,77,140,.08)}
+    .sticky-nav{position:sticky;top:0;z-index:50}
+  </style>
+</head>
+<body class="antialiased">
+  <header class="sticky-nav bg-white/90 backdrop-blur border-b border-slate-200/60">
+    <div class="container mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-2">
+        <div class="w-9 h-9 rounded-md bg-[var(--sv-blue)] grid place-items-center text-white font-bold">S</div>
+        <span class="text-xl font-semibold tracking-tight">Sydvolt</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-8 text-slate-700">
+        <a href="index.html" class="hover:text-[var(--sv-blue)]">Startsida</a>
+        <a href="produkter.html" class="hover:text-[var(--sv-blue)]">Produkter</a>
+        <a href="om-oss.html" class="hover:text-[var(--sv-blue)]">Om oss</a>
+        <a href="kontakt.html" class="hover:text-[var(--sv-blue)] font-semibold text-[var(--sv-blue)]">Kontakt</a>
+        <a href="boka.html" class="hover:text-[var(--sv-blue)]">Boka</a>
+      </nav>
+      <a href="kontakt.html" class="hidden md:inline-flex btn-primary px-4 py-2 rounded-md shadow-soft">Få offert</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="bg-[var(--sv-light)]">
+    <div class="container mx-auto px-6 py-16 md:py-20">
+      <h1 class="text-3xl md:text-5xl font-extrabold mb-4">Kontakta Sydvolt</h1>
+      <p class="text-slate-600">Fyll i formuläret så återkommer vi med rådgivning och en kostnadsfri offert.</p>
+    </div>
+  </section>
+
+  <!-- Form + Info -->
+  <section class="container mx-auto px-6 py-16 md:py-20 grid md:grid-cols-3 gap-10">
+    <div class="md:col-span-2 p-6 rounded-xl bg-white border border-slate-200 shadow-soft">
+      <form onsubmit="event.preventDefault(); document.getElementById('success').classList.remove('hidden'); this.reset();">
+        <div class="grid md:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-sm font-medium mb-1">Namn</label>
+            <input required type="text" class="w-full border border-slate-300 rounded-md px-3 py-2" placeholder="Ditt namn" />
+          </div>
+          <div>
+            <label class="block text-sm font-medium mb-1">Telefon</label>
+            <input required type="tel" class="w-full border border-slate-300 rounded-md px-3 py-2" placeholder="070-123 45 67" />
+          </div>
+          <div>
+            <label class="block text-sm font-medium mb-1">E-post</label>
+            <input required type="email" class="w-full border border-slate-300 rounded-md px-3 py-2" placeholder="namn@exempel.se" />
+          </div>
+          <div>
+            <label class="block text-sm font-medium mb-1">Adress</label>
+            <input type="text" class="w-full border border-slate-300 rounded-md px-3 py-2" placeholder="Gatuadress, ort" />
+          </div>
+          <div class="md:col-span-2">
+            <label class="block text-sm font-medium mb-1">Typ av installation</label>
+            <select class="w-full border border-slate-300 rounded-md px-3 py-2">
+              <option>Solceller</option>
+              <option>Batteri</option>
+              <option>Båda</option>
+            </select>
+          </div>
+          <div class="md:col-span-2">
+            <label class="block text-sm font-medium mb-1">Meddelande</label>
+            <textarea rows="5" class="w-full border border-slate-300 rounded-md px-3 py-2" placeholder="Berätta kort om ditt tak och din förbrukning..."></textarea>
+          </div>
+        </div>
+        <div class="mt-4 flex items-center gap-3">
+          <button class="btn-primary px-5 py-3 rounded-md">Skicka</button>
+          <span id="success" class="hidden text-green-600">Tack! Sydvolt kontaktar dig inom kort.</span>
+        </div>
+      </form>
+    </div>
+    <div class="space-y-6">
+      <div class="p-6 rounded-xl bg-white border border-slate-200 shadow-soft">
+        <h3 class="font-semibold mb-2">Kontaktinfo</h3>
+        <p class="text-slate-600">Telefon: 040-123 45 67<br>E-post: hej@sydvolt.se<br>Adress: Storgatan 12, 211 00 Malmö</p>
+        <p class="text-slate-600 mt-3">Öppettider: Mån–Fre 08:00–17:00</p>
+      </div>
+      <div class="p-6 rounded-xl bg-white border border-slate-200 shadow-soft">
+        <h3 class="font-semibold mb-2">Google Maps</h3>
+        <div class="w-full h-56 bg-slate-100 grid place-items-center rounded-md text-slate-500">Karta (placeholder)</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[var(--sv-dark)] text-white">
+    <div class="container mx-auto px-6 py-12 grid md:grid-cols-4 gap-8">
+      <div>
+        <div class="flex items-center gap-2 mb-3">
+          <div class="w-9 h-9 rounded-md bg-white/10 grid place-items-center font-bold">S</div>
+          <span class="text-lg font-semibold">Sydvolt</span>
+        </div>
+        <p class="text-white/70">Premium solenergi för hem, BRF och företag. Lokal expertis, nordisk design och långsiktig trygghet.</p>
+      </div>
+      <div>
+        <h5 class="font-semibold mb-3">Sidor</h5>
+        <ul class="space-y-2 text-white/80">
+          <li><a href="index.html" class="hover:underline">Startsida</a></li>
+          <li><a href="produkter.html" class="hover:underline">Produkter</a></li>
+          <li><a href="om-oss.html" class="hover:underline">Om oss</a></li>
+          <li><a href="kontakt.html" class="hover:underline">Kontakt</a></li>
+          <li><a href="boka.html" class="hover:underline">Boka</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 class="font-semibold mb-3">Kontakt</h5>
+        <ul class="text-white/80 space-y-2">
+          <li>Telefon: 040-123 45 67</li>
+          <li>E-post: hej@sydvolt.se</li>
+          <li>Adress: Storgatan 12, 211 00 Malmö</li>
+          <li>Öppet: Mån–Fre 08:00–17:00</li>
+        </ul>
+      </div>
+      <div>
+        <h5 class="font-semibold mb-3">Förtroende</h5>
+        <div class="text-white/80">Trustpilot (placeholder)</div>
+        <div class="flex gap-3 mt-3">
+          <a href="#" aria-label="Facebook" class="w-9 h-9 rounded-md bg-white/10 grid place-items-center">f</a>
+          <a href="#" aria-label="Instagram" class="w-9 h-9 rounded-md bg-white/10 grid place-items-center">ig</a>
+          <a href="#" aria-label="LinkedIn" class="w-9 h-9 rounded-md bg-white/10 grid place-items-center">in</a>
+        </div>
+      </div>
+    </div>
+    <div class="border-t border-white/10">
+      <div class="container mx-auto px-6 py-4 text-sm text-white/60">© 2025 Sydvolt. Alla rättigheter förbehållna.</div>
+    </div>
+  </footer>
+</body>
+</html>

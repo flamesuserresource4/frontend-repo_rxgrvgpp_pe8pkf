@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Om Sydvolt – Vision, team och kvalitet | Sydvolt</title>
+  <meta name="description" content="Lär känna Sydvolt. Vår bakgrund, vision och varför kunder i södra Sverige väljer oss för solceller och batterilagring. Kvalitet, estetik och trygghet." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root { --sv-blue:#0A4D8C; --sv-green:#1DB954; --sv-light:#F8FBFF; --sv-dark:#0B1420; }
+    body { font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,sans-serif; color:#0b1a2b; }
+    .container{max-width:1200px}
+    .fade-in{opacity:0;transform:translateY(12px);animation:fadeUp .7s ease forwards}
+    @keyframes fadeUp{to{opacity:1;transform:translateY(0)}}
+    .btn-primary{background:var(--sv-blue);color:white}
+    .btn-primary:hover{background:#083e72}
+    .shadow-soft{box-shadow:0 10px 30px rgba(10,77,140,.08)}
+    .sticky-nav{position:sticky;top:0;z-index:50}
+  </style>
+</head>
+<body class="antialiased">
+  <header class="sticky-nav bg-white/90 backdrop-blur border-b border-slate-200/60">
+    <div class="container mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-2">
+        <div class="w-9 h-9 rounded-md bg-[var(--sv-blue)] grid place-items-center text-white font-bold">S</div>
+        <span class="text-xl font-semibold tracking-tight">Sydvolt</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-8 text-slate-700">
+        <a href="index.html" class="hover:text-[var(--sv-blue)]">Startsida</a>
+        <a href="produkter.html" class="hover:text-[var(--sv-blue)]">Produkter</a>
+        <a href="om-oss.html" class="hover:text-[var(--sv-blue)] font-semibold text-[var(--sv-blue)]">Om oss</a>
+        <a href="kontakt.html" class="hover:text-[var(--sv-blue)]">Kontakt</a>
+        <a href="boka.html" class="hover:text-[var(--sv-blue)]">Boka</a>
+      </nav>
+      <a href="kontakt.html" class="hidden md:inline-flex btn-primary px-4 py-2 rounded-md shadow-soft">Kontakta oss</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="bg-[var(--sv-light)]">
+    <div class="container mx-auto px-6 py-16 md:py-20 grid md:grid-cols-2 gap-10 items-center">
+      <div class="fade-in">
+        <h1 class="text-3xl md:text-5xl font-extrabold mb-4">Solenergi med nordisk precision</h1>
+        <p class="text-slate-600 mb-6">Vi startade Sydvolt för att leverera solenergi där design, kvalitet och kundtrygghet är i fokus. Vår vision är enkel: varje installation ska kännas premium – från första samtalet till många år av problemfri drift.</p>
+      </div>
+      <div class="fade-in">
+        <img class="w-full rounded-xl shadow-soft" alt="Sydvolt team" src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1400&auto=format&fit=crop">
+      </div>
+    </div>
+  </section>
+
+  <!-- Varför välja oss -->
+  <section class="container mx-auto px-6 py-16 md:py-20">
+    <h2 class="text-2xl md:text-3xl font-bold mb-6">Varför välja Sydvolt?</h2>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="p-6 rounded-xl bg-white border border-slate-200 shadow-soft">
+        <h3 class="font-semibold mb-2">Kvalitet utan kompromisser</h3>
+        <p class="text-slate-600">Vi arbetar med ledande leverantörer och installerar med precision för bästa prestanda och utseende.</p>
+      </div>
+      <div class="p-6 rounded-xl bg-white border border-slate-200 shadow-soft">
+        <h3 class="font-semibold mb-2">Transparent rådgivning</h3>
+        <p class="text-slate-600">Tydliga kalkyler, realistiska förväntningar och en partner som finns kvar även efter installation.</p>
+      </div>
+      <div class="p-6 rounded-xl bg-white border border-slate-200 shadow-soft">
+        <h3 class="font-semibold mb-2">Lokal närvaro</h3>
+        <p class="text-slate-600">Vi finns nära dig – med snabb service, egen personal och kännedom om lokala förutsättningar.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process i 3 steg -->
+  <section class="bg-[var(--sv-light)]">
+    <div class="container mx-auto px-6 py-16 md:py-20">
+      <h2 class="text-2xl md:text-3xl font-bold mb-6">Installationsprocess i 3 steg</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="p-6 bg-white rounded-xl border border-slate-200 shadow-soft">
+          <div class="text-sm text-slate-500 mb-1">Steg 1</div>
+          <h3 class="font-semibold mb-2">Rådgivning & offert</h3>
+          <p class="text-slate-600">Vi analyserar tak, förbrukning och dina mål. Du får en tydlig offert och besparingskalkyl.</p>
+        </div>
+        <div class="p-6 bg-white rounded-xl border border-slate-200 shadow-soft">
+          <div class="text-sm text-slate-500 mb-1">Steg 2</div>
+          <h3 class="font-semibold mb-2">Installation</h3>
+          <p class="text-slate-600">Certifierade montörer installerar paneler och eventuell batterilagring med hög finish.</p>
+        </div>
+        <div class="p-6 bg-white rounded-xl border border-slate-200 shadow-soft">
+          <div class="text-sm text-slate-500 mb-1">Steg 3</div>
+          <h3 class="font-semibold mb-2">Driftsättning & uppföljning</h3>
+          <p class="text-slate-600">Vi startar anläggningen, hjälper med appen och följer upp så att allt fungerar perfekt.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team -->
+  <section class="container mx-auto px-6 py-16 md:py-20">
+    <h2 class="text-2xl md:text-3xl font-bold mb-6">Teamet</h2>
+    <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-6">
+      <div class="p-6 rounded-xl bg-white border border-slate-200 shadow-soft text-center">
+        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=300&auto=format&fit=crop" alt="Team" class="w-24 h-24 rounded-full mx-auto mb-3 object-cover">
+        <h4 class="font-semibold">Alex</h4>
+        <p class="text-slate-500 text-sm">Projektledare</p>
+      </div>
+      <div class="p-6 rounded-xl bg-white border border-slate-200 shadow-soft text-center">
+        <img src="https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?q=80&w=300&auto=format&fit=crop" alt="Team" class="w-24 h-24 rounded-full mx-auto mb-3 object-cover">
+        <h4 class="font-semibold">Sara</h4>
+        <p class="text-slate-500 text-sm">Solcellsexpert</p>
+      </div>
+      <div class="p-6 rounded-xl bg-white border border-slate-200 shadow-soft text-center">
+        <img src="https://images.unsplash.com/photo-1546525848-3ce03ca516f6?q=80&w=300&auto=format&fit=crop" alt="Team" class="w-24 h-24 rounded-full mx-auto mb-3 object-cover">
+        <h4 class="font-semibold">Johan</h4>
+        <p class="text-slate-500 text-sm">Installatör</p>
+      </div>
+      <div class="p-6 rounded-xl bg-white border border-slate-200 shadow-soft text-center">
+        <img src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?q=80&w=300&auto=format&fit=crop" alt="Team" class="w-24 h-24 rounded-full mx-auto mb-3 object-cover">
+        <h4 class="font-semibold">Nora</h4>
+        <p class="text-slate-500 text-sm">Kundansvarig</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifikat & partners -->
+  <section class="bg-[var(--sv-light)]">
+    <div class="container mx-auto px-6 py-16 md:py-20">
+      <h2 class="text-2xl md:text-3xl font-bold mb-6">Certifikat & partners</h2>
+      <div class="grid grid-cols-2 md:grid-cols-5 gap-6 items-center text-center">
+        <div class="p-4 bg-white rounded-lg border border-slate-200 shadow-soft">Auktoriserad installatör</div>
+        <div class="p-4 bg-white rounded-lg border border-slate-200 shadow-soft">Elsäkerhet</div>
+        <div class="p-4 bg-white rounded-lg border border-slate-200 shadow-soft">Trygg elhandel</div>
+        <div class="p-4 bg-white rounded-lg border border-slate-200 shadow-soft">Grön teknik</div>
+        <div class="p-4 bg-white rounded-lg border border-slate-200 shadow-soft">Partnerloggor</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[var(--sv-dark)] text-white">
+    <div class="container mx-auto px-6 py-12 grid md:grid-cols-4 gap-8">
+      <div>
+        <div class="flex items-center gap-2 mb-3">
+          <div class="w-9 h-9 rounded-md bg-white/10 grid place-items-center font-bold">S</div>
+          <span class="text-lg font-semibold">Sydvolt</span>
+        </div>
+        <p class="text-white/70">Premium solenergi för hem, BRF och företag. Lokal expertis, nordisk design och långsiktig trygghet.</p>
+      </div>
+      <div>
+        <h5 class="font-semibold mb-3">Sidor</h5>
+        <ul class="space-y-2 text-white/80">
+          <li><a href="index.html" class="hover:underline">Startsida</a></li>
+          <li><a href="produkter.html" class="hover:underline">Produkter</a></li>
+          <li><a href="om-oss.html" class="hover:underline">Om oss</a></li>
+          <li><a href="kontakt.html" class="hover:underline">Kontakt</a></li>
+          <li><a href="boka.html" class="hover:underline">Boka</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 class="font-semibold mb-3">Kontakt</h5>
+        <ul class="text-white/80 space-y-2">
+          <li>Telefon: 040-123 45 67</li>
+          <li>E-post: hej@sydvolt.se</li>
+          <li>Adress: Storgatan 12, 211 00 Malmö</li>
+          <li>Öppet: Mån–Fre 08:00–17:00</li>
+        </ul>
+      </div>
+      <div>
+        <h5 class="font-semibold mb-3">Förtroende</h5>
+        <div class="text-white/80">Trustpilot (placeholder)</div>
+        <div class="flex gap-3 mt-3">
+          <a href="#" aria-label="Facebook" class="w-9 h-9 rounded-md bg-white/10 grid place-items-center">f</a>
+          <a href="#" aria-label="Instagram" class="w-9 h-9 rounded-md bg-white/10 grid place-items-center">ig</a>
+          <a href="#" aria-label="LinkedIn" class="w-9 h-9 rounded-md bg-white/10 grid place-items-center">in</a>
+        </div>
+      </div>
+    </div>
+    <div class="border-t border-white/10">
+      <div class="container mx-auto px-6 py-4 text-sm text-white/60">© 2025 Sydvolt. Alla rättigheter förbehållna.</div>
+    </div>
+  </footer>
+</body>
+</html>
